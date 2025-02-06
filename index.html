@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>movieApp</title>
+    <title>Movie App</title>
     <!-- Qui è presente la favicon in due formati -->
     <link rel="icon" type="image/png" href="assets\favicon.png">
     <link rel="icon" type="image/png" href="assets\favicon.ico">
+     <!-- Link per il CSS di Font Awesome (aggiungilo qui) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -16,37 +17,40 @@
     <!-- Navbar -->
     <nav>
       <div class="navbar">
-        <a href="index.html" class="logo">movieApp</a>
+        <a href="index.html" class="logo">Movie App</a>
         <ul class="nav-links">
           <li><a href="...">Home</a></li>
           <li><a href="...">Movies</a></li>
           <li><a href="...">Series</a></li>
           <li><a href="...">Contact</a></li>
         </ul>
+
+      <!--Bottone ricerca-->
+    <div class="search-container">
+      <input type="text" id="search" class="search-input"placeholder="Search a Movie...">
+      <button id="searchButton">Search</button>
+    </div>
       </div>
     </nav>
 
-    <!--Bottone ricerca-->
-    <div class="searchContainer">
-      <input type="text" id="search" placeholder="Cerca un film...">
-      <button id="searchButton">Cerca</button>
-    </div>
+    
 
     <!-- Spazio per i film -->
      <div id="movies-container"></div>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-container">
+        <div class="footer-container">
         <ul class="social-links">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="#" class="fab fa-facebook-f"></a></li>
+          <li><a href="#"class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-instagram"></a></li>
         </ul>
       </div>
-      <div class="footerList">
-    
+    <div class="footerList">
+
       <div class="footer-section">
+      <h3>PAGAMENTI E CONDIZIONI</h3>
       <ul class="Payment & Conditions"> 
       <li><a href="#">Spedizione e resi</a></li>
       <li><a href="#">Modalità di pagamento</a></li>
@@ -73,25 +77,23 @@
       <li><a href="#">MOVIE education</a></li>
       <li><a href="#">MOVIE ideas</a></li>
       <li><a href="#">MOVIE foundation</a></li>
-      <li><a href="#">Programma di affiliazione </a></li>
+      
   </ul>
 </div>
 </div>
 
 
-
-<div class="footer-bottom">
 <div class="footer-bottom-top">
   <h3 class="mail"> ISCRIVITI ALLE E-MAIL DI MARKETING</h3>
   <h3 class="follow"> SEGUICI </h3>
 </div>
-<div class="footer-bottom-bottom">
   <div class="email-form">
       <input type="email" placeholder="Inserisci la tua email" class="email-input" />
       <button class="email-submit">
           <span class="arrow">&#8594;</span> <!-- Freccia destra -->
       </button>
   </div>
+
 </div>
 
 
@@ -103,7 +105,12 @@
   <a href="...">Termini d'uso</a>
   <a href="...">Accessibilità</a>
   <a href="...">Impostazioni dei cookie</a>
+
+
+  <div class="footer-text">
   <p>&copy; <span id="copyrightYear"></span>FilmHub. rights reserved.</p>
+  </div>
+  
 </div>
 </div>
     </footer>
